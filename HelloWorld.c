@@ -11,6 +11,9 @@ int main(void) {
 	// scanf를 사용했을 때 Enter를 눌러서 입력버퍼에
 	// 남아있는 Enter를 없애는 기능으로 사용
 	// fflush(stdin)는 현재는 사용 불가
+	// getchar()를 통해서 그냥 \n을 받은 다음
+	// 저장을 따로 하지않아서 버려지므로
+	// 입력버퍼가 깨끗하게 비워진다.
 
 	printf("이름을 입력하세요.: ");
 	gets_s(szName, sizeof(szName));
