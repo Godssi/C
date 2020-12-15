@@ -7,6 +7,10 @@ int main(void) {
 
 	printf("나이를 입력하세요.: ");
 	scanf_s("%d%*c", &nAge);
+	// %*c는 입력 버퍼에 받은 데이터를 버리는 것으로 
+	// scanf를 사용했을 때 Enter를 눌러서 입력버퍼에
+	// 남아있는 Enter를 없애는 기능으로 사용
+	// fflush(stdin)는 현재는 사용 불가
 
 	printf("이름을 입력하세요.: ");
 	gets_s(szName, sizeof(szName));
